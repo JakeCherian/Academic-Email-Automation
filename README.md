@@ -98,38 +98,10 @@ Includes:
 
 # Architecture
 
-### High-Level Architecture Diagram
-
-```
-                ┌──────────────┐
-                │ Student Inbox│
-                └───────┬──────┘
-                        │ (RPA reads emails)
-                  ┌─────▼──────┐
-                  │   UiPath   │
-                  │  Workflows │
-                  └─────┬──────┘
-                        │ Extracted data (JSON + files)
-                  ┌─────▼──────────┐
-                  │   FastAPI API  │
-                  └─────┬──────────┘
-                        │
-      ┌─────────────────▼──────────────────┐
-      │ Classification | Eligibility | LLM │
-      └─────────────────┬──────────────────┘
-                        │
-               ┌────────▼─────────┐
-               │  SQLite Database │
-               └────────┬─────────┘
-                        │
-              ┌─────────▼──────────┐
-              │   Web Frontend     │
-              │  (HTML/CSS/JS)     │
-              └────────────────────┘
-```
-
-Each component communicates seamlessly, forming a hybrid **RPA + AI-driven academic assistant**.
-
+<div class="image-container">
+       <img src="Email Automation Architecture.jpg" alt="Logo" width="600" height="300"> 
+    </div>
+    
 ---
 
 # Tech Stack
@@ -260,6 +232,7 @@ The workflows correspond to `.nupkg` files included in the repo.
 | **A Nathania Rachael**     | nathaniarachael@gmail.com       |
 | **Allen Reji**             | allenreji@gmail.com             |
 | **Jacob Cherian M**        | jakecherian10@gmail.com         |
+
 
 
 
