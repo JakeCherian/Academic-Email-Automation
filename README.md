@@ -27,12 +27,10 @@ The solution integrates **UiPath RPA** for inbox automation and **FastAPI + SQLi
 3. [Architecture](#architecture)
 4. [Tech Stack](#tech-stack)
 5. [System Workflow](#system-workflow)
-6. [Installation](#installation)
-7. [Running the System](#running-the-system)
-8. [UiPath Workflow Integration](#uipath-workflow-integration)
-9. [Email Classification Logic](#email-classification-logic)
-10. [Limitations & Future Work](#limitations--future-work)
-11. [Contributors](#contributors)
+6. [UiPath Workflow Integration](#uipath-workflow-integration)
+7. [Email Classification Logic](#email-classification-logic)
+8. [Limitations & Future Work](#limitations--future-work)
+9. [Contributors](#contributors)
 
 ---
 
@@ -188,67 +186,6 @@ Each component communicates seamlessly, forming a hybrid **RPA + AI-driven acade
 
 ---
 
-# Installation
-
-### Step 1: Clone Repository
-
-```
-git clone https://github.com/allen-reji/Academic-Email-Automation
-cd Academic-Email-Automation
-```
-
-### Step 2: Create Virtual Env
-
-```
-python -m venv venv
-source venv/bin/activate         (Linux/Mac)
-venv\Scripts\activate            (Windows)
-```
-
-### Step 3: Install Dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### Step 4: Initialize Database
-
-The repository already includes `users.db`.
-If you wish to recreate it:
-
-```
-python
->>> from app.database import Base, engine
->>> Base.metadata.create_all(engine)
->>> exit()
-```
-
----
-
-# Running the System
-
-### Start Backend Server
-
-```
-uvicorn app.main:app --reload --port 5000
-```
-
-### Access Frontend
-
-Open:
-
-```
-http://localhost:5000
-```
-
-HTML files are located under:
-
-```
-app/static/
-```
-
----
-
 # UiPath Workflow Integration
 
 Two main workflows are used:
@@ -323,6 +260,7 @@ The workflows correspond to `.nupkg` files included in the repo.
 | **A Nathania Rachael**     | nathaniarachael@gmail.com       |
 | **Allen Reji**             | allenreji@gmail.com             |
 | **Jacob Cherian M**        | jakecherian10@gmail.com         |
+
 
 
 
