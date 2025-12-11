@@ -99,7 +99,7 @@ Includes:
 # Architecture
 
 <div class="image-container">
-       <img src="Email Automation Architecture.png" alt="Logo" width="600" height="300"> 
+       <img src="Email Automation Architecture.png" alt="Logo" width="750" height="600"> 
     </div>
     
 ---
@@ -232,6 +232,7 @@ The workflows correspond to `.nupkg` files included in the repo.
 | **A Nathania Rachael**     | nathaniarachael@gmail.com       |
 | **Allen Reji**             | allenreji@gmail.com             |
 | **Jacob Cherian M**        | jakecherian10@gmail.com         |
+
 
 
 
